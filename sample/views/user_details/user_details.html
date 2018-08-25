@@ -1,0 +1,64 @@
+<div class="container" ng-controller="userDetailsCtrl" style="margin-top:10px;">
+<div class="row">
+<div class="col-md-2 col-sm-0">
+</div>
+<div class="col-md-8 col-sm-12" style="background: #fff;">
+<section class="login-block">
+    <div class="login-container">
+	<div class="row">
+		
+		<div class="col-md-12 login-sec">
+			
+			<div ng-include="'views/menu/menu.html'"></div>
+			
+			<div id="successBlock" ng-repeat="user in users">
+			
+			<form class="login-form" method="post" onsubmit="event.preventDefault();">
+			
+				<div class="row">
+				<div class="col-sm-6">
+				<strong>Name</strong>
+				</div>
+				<div class="col-sm-6">
+				<input type="text" id="name" class="form-control" value="{{user.name}}" />
+				</div>
+				</div>
+				<br>
+				
+				<div class="row">
+				<div class="col-sm-6">
+				<strong>Email</strong>
+				</div>
+				<div class="col-sm-6">
+				<input type="text" id="email" class="form-control" value="{{user.email}}" />
+				</div>
+				</div>
+				<br>
+				
+				<div class="row">
+				<div class="col-sm-6">
+				<strong>Phone</strong>
+				</div>
+				<div class="col-sm-6">
+				<input type="text" id="phone" class="form-control" value="{{user.phone}}" />
+				</div>
+				</div>
+				<br>
+				
+				<input type="submit" class="btn btn-success" ng-click="updateUserDetails();" value="Update Details"/>
+				&nbsp; <button class="btn btn-danger" onclick="history.back();"> Cancel </button>
+				
+			</form>
+			
+			</div>
+			
+			<div id="failureBlock">There is no details to show, try again later.</div>
+			
+		</div>
+</div>
+</section>
+</div>
+<div class="col-md-2 col-sm-0">
+</div>
+</div>
+</div>

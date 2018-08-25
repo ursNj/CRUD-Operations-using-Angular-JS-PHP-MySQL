@@ -1,0 +1,49 @@
+<div class="container" ng-controller="homeCtrl" style="margin-top:10px;">
+<div class="row">
+<div class="col-md-2 col-sm-0">
+</div>
+<div class="col-md-8 col-sm-12" style="background: #fff;">
+<section class="login-block">
+    <div class="login-container">
+	<div class="row">
+		
+		<div class="col-md-12 login-sec">
+		    
+			<div class="defaultHeading"> Users </div>
+
+			<div id="successBlock" class="users_list">
+				
+				<div class="user_block" ng-repeat="user in users">
+					<a href="#!/userDetails/{{user.id}}"><div class="user_image">
+						<img src="images/noimage.png" />
+					</div></a>
+					<div class="user_details">
+					<a href="#!/userDetails/{{user.id}}"><div class="user_display_name">
+						{{user.name}}
+					</div>
+					<div class="user_login_name">
+						{{user.email}} - {{user.phone}}
+					</div></a>
+					</div>
+					<div class="user_remove" ng-click="deleteUser(user.id);">
+					X
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+			</div>
+			
+			<div id="failureBlock">There is no users available</div>
+						
+			<a href="#!/addUser" class="btn btn-success btn-block">
+			<i class="fa fa-plus" aria-hidden="true"></i> &nbsp; New User 
+			</a>			
+		
+		</div>
+</div>
+</section>
+</div>
+<div class="col-md-2 col-sm-0">
+</div>
+</div>
+</div>

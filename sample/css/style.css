@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body{
+font-family: 'Lato', sans-serif !important;
+/*background:#ebebeb;*/
+overflow-y: scroll !important;
+overflow-x: hidden !important;
+}
+
+.navbar-inverse {
+    background-color: #32ad3c;
+    border-color: #32ad3c;
+}
+.clear {
+	clear:both;
+}
+.footer {
+    background: #ebebeb;
+    padding:10px 5px;
+    border-top: 1px solid #cbcbcb;  
+}
+.footer p { 
+    text-align: center;
+}
+.loading-dialog {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 0, 0, 0, .5 ) url('../images/loading.gif') 50% 50% no-repeat;
+}
+
+
+/* Login page styles */
+
+.banner-sec{ min-height:700px; padding:0;}
+.login-container{background:#fff;}
+.login-sec{position:relative; padding-top:0px;}
+.login-copy {    position: absolute;
+    color: #fff;
+    padding: 10px;
+    bottom: 0px;
+    text-align: justify;
+}
+.brand_logos img {
+	height:30px;
+}
+.my_menu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #999;
+}
+.welcome_text {
+	position: absolute;
+    top: 0px;
+    font-size: 20px;
+    padding: 7px 0px;
+}
+.my_menu a {
+		color:#000;
+		font-weight:bold;
+}
+
+#selectedLang {
+    background: #999;
+    padding: 7px;
+    font-weight: bold;
+    border: 1px solid #999;
+    color: #000;
+}
+
+.ng-confirm.ng-confirm-light .ng-confirm-bg, .ng-confirm.ng-confirm-white .ng-confirm-bg {
+    opacity: .5;
+}
+
+.defaultHeading {
+    background: #32ad3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.users_list li {
+	padding : 10px 0px;
+}
+.correctUsername {
+	display:none;
+	position: absolute;
+    right: 20px;
+    margin-top: -35px;
+    font-size: 25px;
+	color:#32ad3c;
+}
+.wrongUsername {
+	display:none;
+	position: absolute;
+    right: 19px;
+    margin-top: -35px;
+    font-size: 25px;
+	color:red;
+}
+
+.user_block {
+	margin-bottom: 10px;
+    border: 2px solid #DDE0E2;
+    background: #e9ebee;
+}
+
+.user_image {
+	float: left;
+    padding: 5px;
+}
+.user_image img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
+
+.user_details {
+	float: left;
+	padding: 7px 5px;
+}
+
+.user_remove {
+	float: right;
+	cursor:pointer;
+    background: #32ad3c;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+	border-left:2px solid #DDE0E2;
+	border-bottom:2px solid #DDE0E2;
+}
+.user_display_name {
+	font-size:16px;
+	font-weight: 500;
+	margin-bottom:5px;
+}
+.user_login_name {
+	font-size:13px;
+}
+
+#failureBlock {
+	display:none;
+	font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

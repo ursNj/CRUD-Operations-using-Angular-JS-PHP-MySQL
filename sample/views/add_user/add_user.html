@@ -1,0 +1,38 @@
+<div class="container" ng-controller="addUserCtrl" style="margin-top:10px;">
+<div class="row">
+<div class="col-md-2 col-sm-0">
+</div>
+<div class="col-md-8 col-sm-12" style="background: #fff;">
+<section class="login-block">
+    <div class="login-container">
+	<div class="row">
+		
+		<div class="col-md-12 login-sec">
+		    <!-- <h2 class="text-center">Login Now</h2> -->
+		    <form class="login-form" method="post" onsubmit="event.preventDefault();">
+			
+			  <div class="form-group">
+				<input type="text" class="form-control" id="name" placeholder="Name" />
+			  </div>
+			   
+			  <div class="form-group">
+				<input type="email" class="form-control" id="email" placeholder="Email" />
+			  </div>
+			   
+			  <div class="form-group">
+				<input type="text" class="form-control" id="phone" placeholder="Phone" />
+			  </div>
+			   
+			  <button type="submit" class="btn btn-success" ng-click="addUser();">Submit</button>
+			  &nbsp; <button class="btn btn-danger" onclick="history.back();"> Cancel </button>
+			  
+			</form>
+		
+		</div>
+</div>
+</section>
+</div>
+<div class="col-md-2 col-sm-0">
+</div>
+</div>
+</div>
